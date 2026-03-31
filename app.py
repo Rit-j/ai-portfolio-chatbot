@@ -142,7 +142,7 @@ def chat(user_input, history):
     while True:
         response = openrouter.chat.completions.create(
             # model="nvidia/nemotron-3-super-120b-a12b:free",
-            model=stepfun/step-3.5-flash:free,
+            model="stepfun/step-3.5-flash:free",
             messages=messages,
             tools=tools
         )
